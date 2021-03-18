@@ -46,6 +46,7 @@ body {
   margin: 0;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 26px;
   background-color: #fff;
   color: var(--nav-color);
@@ -79,12 +80,21 @@ img {
   width: 100%;
   background-color: var(--header-bg);
 }
+.top-header {
+  margin-bottom: 40px;
+}
 .header-container {
   padding-top: 40px;
   display: flex;
   align-items: center;
 }
+.logo-img {
+  display: block;
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+  border-radius: 5px;
+}
 .currency-list {
+  margin: 0;
   padding: 0;
   margin-left: 17px;
   display: flex;
@@ -107,32 +117,35 @@ img {
 
 .currency-amount {
   color: #7a7a7a;
+  font-weight: 400;
 }
 
 .header-action {
   display: flex;
 }
 .btn {
-  width: 40px;
-  height: 40px;
   background-repeat: no-repeat;
   border-radius: 5px;
   border: none;
   background-position: center center;
 }
 .btn-search {
+  margin-right: 22px;
+  width: 40px;
+  height: 40px;
   background-image: url(../images/search.png);
-
   background-color: #fff;
 }
 
 .btn-languages {
+  height: 40px;
+  margin-right: 22px;
   background-color: #fff;
   display: flex;
+  align-items: center;
 }
 
 .btn-languages::before {
-  display: block;
   content: "";
   background-image: url(../images/ru.png);
   width: 40px;
@@ -141,4 +154,54 @@ img {
   border-radius: 5px;
   border: none;
   background-position: center center;
+}
+.telegram-link {
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 19px; */
+  color: #ffffff;
+}
+.telegram-link:hover {
+  background: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 85.96%);
+}
+.telegram-link::before {
+  margin-right: 5px;
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../images/tg.png);
+  width: 20px;
+  height: 20px;
+}
+.nav-list {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 18px;
+  box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+  border-radius: 5px;
+  background-color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #515151;
+}
+.nav-link:hover {
+  color: #295091;
 }
